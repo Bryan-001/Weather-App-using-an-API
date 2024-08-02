@@ -1,7 +1,8 @@
 <?php
+<?php
 if(isset($_GET['city'])) {
     $city = htmlspecialchars($_GET['city']);
-    $apiKey = '012345'; // Replace with your OpenWeatherMap API key
+    $apiKey = '60f0972cfeba343c1bddb246c126b8fb'; // Replace with your OpenWeatherMap Default API key
     $apiUrl = "https://api.openweathermap.org/data/2.5/weather?q={$city}&appid={$apiKey}&units=metric";
 
     $weatherData = file_get_contents($apiUrl);
@@ -21,3 +22,4 @@ if(isset($_GET['city'])) {
     }
 }
 ?>
+
